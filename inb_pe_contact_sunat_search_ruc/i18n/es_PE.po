@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* inb_pe_contact_sunat_search_ruc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-10 05:51+0000\n"
+"PO-Revision-Date: 2021-10-10 05:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid ""
+"<span>\n"
+"                                <strong>NO CONNECTION OR THE DATA DOES NOT EXIST, PLEASE REGISTER THE DATA MANUALLY.</strong>\n"
+"                            </span>"
+msgstr ""
+"<span>\n"
+"                                <strong>No hay conexión o los datos no existen, por favor registre los datos manualmente.</strong>\n"
+"                            </span>"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__activo
+msgid "Activo"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__alert_warning_vat
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__alert_warning_vat
+msgid "Alert warning vat"
+msgstr ""
+"\n"
+"Alerta de advertencia RUC"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__bajadefinitiva
+msgid "Baja definitiva"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__sbajadefinitivaoficio
+msgid "Baja definitiva de oficio"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__bajaprovicional
+msgid "Baja provisional"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__sbajaprovicionaloficio
+msgid "Baja provisional de oficio"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model,name:inb_pe_contact_sunat_search_ruc.model_res_city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__commercial_name
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__commercial_name
+msgid "Commercial Name"
+msgstr "Nombre Comercial"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model,name:inb_pe_contact_sunat_search_ruc.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid "Condition"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model,name:inb_pe_contact_sunat_search_ruc.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__country_id
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__l10n_pe_dni_validation
+msgid "DNI Validation"
+msgstr "Validación de DNI"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_city__display_name
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__display_name
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
+msgid "Dni validation"
+msgstr "Validación de DNI"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__condition__habido
+msgid "Habido"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_city__id
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__id
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid "Information"
+msgstr "Información"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_city____last_update
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company____last_update
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__condition__nhabido
+msgid "No Habido"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__l10n_pe_ruc_validation
+msgid "RUC Validation"
+msgstr "Validación de RUC"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
+msgid "RUC/DNI Validation INBRASOL (PE)"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
+msgid "Ruc validation"
+msgstr "Validación de RUC"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid "SUNAT"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid "Status"
+msgstr "Estado"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__stemporal
+msgid "Suspensión temporal"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
+#, python-format
+msgid "The Dni must be 8 characters long."
+msgstr "El DNI debe tener 8 dígitos."
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
+#, python-format
+msgid "The Ruc must be 11 characters long."
+msgstr "El RUC debe tener 11 dígitos"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__condition
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__condition
+msgid "condition"
+msgstr "Condición"
+
+#. module: inb_pe_contact_sunat_search_ruc
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__status
+#: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__status
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
+msgid "status"
+msgstr "Estado"
