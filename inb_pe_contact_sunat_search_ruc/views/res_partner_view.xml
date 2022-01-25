@@ -17,7 +17,7 @@
                         </div>
                     </div>
                 </xpath>
-                <div class="oe_title" position="after">
+                <div>
                     <div class="o_group" style="margin-bottom: -15%;">
                         <table class="o_group o_inner_group o_group_col_6">
                             <tbody>
@@ -47,14 +47,14 @@
                 </div>
                 <xpath expr="//page[3]" position="after">
                     <page string="SUNAT">
-                         <group>
-                             <group string="Information">
-                                 <field name="condition" readonly="1"/>
-                                 <field name="status" readonly="1"/>
-                             </group>                      
-                         </group>    
-                     </page>
-                 </xpath>     
+                        <group>
+                            <group string="Information">
+                                <field name="condition" readonly="1" />
+                                <field name="status" readonly="1" />
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
             </field>
         </record>
     </data>
