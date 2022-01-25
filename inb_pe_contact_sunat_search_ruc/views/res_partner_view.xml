@@ -47,14 +47,14 @@
                 </div>
                 <xpath expr="//page[3]" position="after">
                     <page string="SUNAT">
-                        <group>
-                            <group string="Information">
-                                <field name="condition" readonly="1" />
-                                <field name="status" readonly="1" />
-                            </group>
-                        </group>
-                    </page>
-                </xpath>
+                         <group>
+                             <group string="Information">
+                                 <field name="condition" readonly="1"/>
+                                 <field name="status" readonly="1"/>
+                             </group>                      
+                         </group>    
+                     </page>
+                 </xpath>     
             </field>
         </record>
     </data>

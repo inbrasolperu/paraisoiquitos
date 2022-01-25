@@ -23,10 +23,8 @@ class ResPartner(models.Model):
 
     country_id = fields.Many2one(default=_default_country)
     commercial_name = fields.Char(string="Commercial Name")
-    alert_warning_vat = fields.Boolean(
-        string="Alert warning vat", default=False)
-    condition = fields.Selection(
-        [('habido', 'Habido'), ('nhabido', 'No Habido')], string="condition")
+    alert_warning_vat = fields.Boolean(string="Alert warning vat", default=False)
+    condition = fields.Selection([('habido', 'Habido'), ('nhabido', 'No Habido')], string="condition")
     status = fields.Selection([('activo', 'Activo'), ('stemporal', 'Suspensión temporal'),
                                ('bajaprovicional', 'Baja provisional'), (
                                    'bajadefinitiva', 'Baja definitiva'),
@@ -41,10 +39,9 @@ class ResPartner(models.Model):
                     res['warning'] = {'title': _('Warning'), 'message': _(
                         'The Ruc must be 11 characters long.')}
                 else:
-                    company = self.env['res.company'].browse(
-                        self.env.company.id)
-                    # if company.l10n_pe_ruc_validation == True:
-                    self.get_data_ruc()
+                    company = self.env['res.company'].browse(self.env.company.id)
+                    if company.l10n_pe_ruc_validation == True:
+                        self.get_data_ruc()
             elif self.l10n_latam_identification_type_id.l10n_pe_vat_code == '1':
                 if len(self.vat) != 8:
                     res['warning'] = {'title': _('Warning'), 'message': _(
@@ -52,8 +49,8 @@ class ResPartner(models.Model):
                 else:
                     company = self.env['res.company'].browse(
                         self.env.company.id)
-                    # if company.l10n_pe_dni_validation == True:
-                    self.get_data_dni()
+                    if company.l10n_pe_dni_validation == True:
+                        self.get_data_dni()
         if res:
             return res
 
@@ -102,23 +99,17 @@ class ResPartner(models.Model):
     def sunat_connection(self, ruc):
         session = requests.Session()
         headers = requests.utils.default_headers()
-        headers = {'Content-Type': 'application/json'}
-        token = 'bde5dc09-6a47-473f-9a73-5eaa9124dfd8-a4038810-2dfc-4ef4-a3f0-fda43288d874'
-        body = {
-            "token": token,
-            "ruc": ruc
-        }
-        url = 'https://ruc.com.pe/api/v1/consultas'
+        token = 'apis-token-1039.7EvthKGrxEzS3HxTbUrtfTtJxzkMHMoz'
+        headers = {"Authorization":token}
+        url="https://api.apis.net.pe/v1/ruc?numero=#ruc#"
         data = {}
         try:
-            response = requests.post(url, data=json.dumps(
-                body), headers=headers, timeout=(15))
+            response = requests.get(url.replace("#ruc#",ruc), headers=headers, timeout=(15))
             if response.status_code == 200:
                 result = response.json()
-                data['business_name'] = result.get('nombre_o_razon_social')
-                data['contributing_status'] = result.get(
-                    'estado_del_contribuyente')
-                data['contributing_condition'] = result.get('condicion_de_domicilio')
+                data['business_name'] = result.get('nombre')
+                data['contributing_status'] = result.get('estado')
+                data['contributing_condition'] = result.get('condicion')
                 data['ubigeo'] = result.get('ubigeo').strip()
                 data['state_id'] = data['ubigeo'][0:2]
                 data['city_id'] = data['ubigeo'][0:4]
@@ -136,22 +127,17 @@ class ResPartner(models.Model):
 
     @api.model
     def reniec_connection(self, dni):
+        token = 'apis-token-1039.7EvthKGrxEzS3HxTbUrtfTtJxzkMHMoz'
         session = requests.Session()
         headers = requests.utils.default_headers()
-        headers = {'Content-Type': 'application/json'}
-        token = 'bde5dc09-6a47-473f-9a73-5eaa9124dfd8-a4038810-2dfc-4ef4-a3f0-fda43288d874'
-        body = {
-            "token": token,
-            "dni": dni
-        }
-        url = 'https://ruc.com.pe/api/v1/consultas'
+        headers = {"Authorization":token}
+        url =  'https://api.apis.net.pe/v1/dni?numero=#dni#'
         data = {}
         try:
-            response = requests.post(url, data=json.dumps(
-                body), headers=headers, timeout=(15))
+            response = requests.get(url.replace("#dni#",dni), headers=headers, timeout=(15))
             if response.status_code == 200:
                 result = response.json()
-                data['name'] = result.get('nombre_completo')
+                data['name'] = result.get('nombre')
             else:
                 self.alert_warning_vat = True
                 data = False

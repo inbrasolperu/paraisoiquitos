@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-10 05:51+0000\n"
-"PO-Revision-Date: 2021-10-10 05:51+0000\n"
+"POT-Creation-Date: 2021-10-10 23:21+0000\n"
+"PO-Revision-Date: 2021-10-10 23:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgid ""
 "                            </span>"
 msgstr ""
 "<span>\n"
-"                                <strong>No hay conexión o los datos no existen, por favor registre los datos manualmente.</strong>\n"
+"                                <strong>NO HAY CONEXIÓN O LOS DATOS NO EXISTEN, POR FAVOR REGISTRE LOS DATOS MANUALMENTE.</strong>\n"
 "                            </span>"
 
 #. module: inb_pe_contact_sunat_search_ruc
@@ -35,9 +35,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__alert_warning_vat
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_users__alert_warning_vat
 msgid "Alert warning vat"
-msgstr ""
-"\n"
-"Alerta de advertencia RUC"
+msgstr "Alerta de RUC"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__status__bajadefinitiva
@@ -78,7 +76,7 @@ msgstr "Compañías"
 #. module: inb_pe_contact_sunat_search_ruc
 #: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
 msgid "Condition"
-msgstr ""
+msgstr "Condición"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model,name:inb_pe_contact_sunat_search_ruc.model_res_partner
@@ -97,16 +95,16 @@ msgid "DNI Validation"
 msgstr "Validación de DNI"
 
 #. module: inb_pe_contact_sunat_search_ruc
+#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
+msgid "DNI validation"
+msgstr "Validación de DNI"
+
+#. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_city__display_name
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__display_name
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_partner__display_name
 msgid "Display Name"
 msgstr "Nombre Mostrado"
-
-#. module: inb_pe_contact_sunat_search_ruc
-#: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
-msgid "Dni validation"
-msgstr "Validación de DNI"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__condition__habido
@@ -135,7 +133,7 @@ msgstr "Última modificación el"
 #. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model.fields.selection,name:inb_pe_contact_sunat_search_ruc.selection__res_partner__condition__nhabido
 msgid "No Habido"
-msgstr ""
+msgstr "NO habido"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model:ir.model.fields,field_description:inb_pe_contact_sunat_search_ruc.field_res_company__l10n_pe_ruc_validation
@@ -144,13 +142,13 @@ msgstr "Validación de RUC"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
-msgid "RUC/DNI Validation INBRASOL (PE)"
-msgstr ""
+msgid "RUC validation"
+msgstr "Validación de RUC"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.view_form_company_inherited
-msgid "Ruc validation"
-msgstr "Validación de RUC"
+msgid "RUC/DNI Validation (PE)"
+msgstr "Validación RUC - DNI (PE)"
 
 #. module: inb_pe_contact_sunat_search_ruc
 #: model_terms:ir.ui.view,arch_db:inb_pe_contact_sunat_search_ruc.model_form_view_inherit
@@ -168,18 +166,22 @@ msgid "Suspensión temporal"
 msgstr ""
 
 #. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/.ipynb_checkpoints/res_partner-checkpoint.py:0
 #: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
 #, python-format
 msgid "The Dni must be 8 characters long."
-msgstr "El DNI debe tener 8 dígitos."
+msgstr ""
 
 #. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/.ipynb_checkpoints/res_partner-checkpoint.py:0
 #: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
 #, python-format
 msgid "The Ruc must be 11 characters long."
-msgstr "El RUC debe tener 11 dígitos"
+msgstr ""
 
 #. module: inb_pe_contact_sunat_search_ruc
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/.ipynb_checkpoints/res_partner-checkpoint.py:0
+#: code:addons/inb_pe_contact_sunat_search_ruc/models/.ipynb_checkpoints/res_partner-checkpoint.py:0
 #: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
 #: code:addons/inb_pe_contact_sunat_search_ruc/models/res_partner.py:0
 #, python-format
